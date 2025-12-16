@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class ArrangeArray {
 
-    static void Arrange(int[] arr){
+    static int[] Arrange(int[] arr){
         int[] newarr=Arrays.copyOf(arr, arr.length);
         int first =0;
         int last=arr.length-1;
@@ -16,11 +16,12 @@ public class ArrangeArray {
                 last--;
             }
         }
-        System.out.println(Arrays.toString(newarr));
+        // System.out.println(Arrays.toString(newarr));
+        return newarr;
     }
     public static void main(String[] args) {
         int arr[]={1,2,3,4,5};
         System.out.println("Array: " +Arrays.toString(arr));
-        Arrange(arr);
+        System.out.println(Arrays.toString(Arrange(arr)));
     }
 }
