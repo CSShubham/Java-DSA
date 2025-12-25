@@ -46,7 +46,7 @@ public class SalesTracker {
             }
 
         }
-        System.out.println("highest sales increment day :" + maxIncDay + " having increment of " + sales[maxIncDay]);
+        System.out.println("highest sales increment day :" + maxIncDay + " having increment of " + maxDiff);
         System.out.println("Average weekend sales = " + weekendSum / weekendCount);
         System.out.println("Countinous loss period for about "
                 + maxlossStreakDays + " days");
